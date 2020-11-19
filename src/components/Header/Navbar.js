@@ -11,10 +11,10 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Demo</a>
+                        <a className="nav-link" href="/about">Demo</a>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -26,7 +26,7 @@ export default function Navbar() {
                         </div>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Contact Me</a>
+                        <a className="nav-link" href="/contact">Contact Me</a>
                     </li>
                     </ul>            
                 </div>

@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Router } from 'react-router-dom';
 
 //stylings
 import './App.scss';
 //components
 import Navbar from './components/Header/Navbar';
+import Routes from './config/Routes';
 
-// so what seems to be the problem?
-// the problem is in components -> Header -> Navbar
 
-class App extends Component {
-  render() {
+function App(props) {
     return (
-      <div>
-        <Navbar />
-      </div>
+        <div className="App">
+          <Navbar />
+          <Routes />
+        </div>
     );
-  }
 }
 
 export default App;
