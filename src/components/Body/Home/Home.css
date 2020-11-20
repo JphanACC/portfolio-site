@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.fnt-pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.padding-top-md {
+    padding-top: 100px;
+}
+
+.bg-gray {
+    background: #181818;
+}
+
+.profile-photo {
+    width: 300px;
+    background-position: cover;
+    background-repeat: no-repeat;
+}

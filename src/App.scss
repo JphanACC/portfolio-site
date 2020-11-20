@@ -1,1 +1,32 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap');
+// wait, you are mixing react-bootstrap with normal bootstrap?
+// or is this in react-bootstrap's docs? 
+// I think I was mixing up due to various tutorial sources, one of them required boostraps in css
+body {
+    font-family: 'Comfortaa', cursive;
+    background: #111111;
+}
+
+//font size
+.md-font {
+    color: #BC8A00;
+    font-size: 18px;
+}
+
+.sm-font {
+    font-size: 14px;
+}
+
+//color 
+.orange-light {
+    color: #BC8A00;
+}
+
+.orange-dark {
+    color: #8f6900;
+}
+
+.light-gray {
+    color: #ECECEC;
+}
