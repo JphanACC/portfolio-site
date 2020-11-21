@@ -1,8 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
+@import "~fontawesome/scss/fontawesome";
+@import "~fontawesome/scss/solid";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap');
-// wait, you are mixing react-bootstrap with normal bootstrap?
-// or is this in react-bootstrap's docs? 
-// I think I was mixing up due to various tutorial sources, one of them required boostraps in css
 body {
     font-family: 'Comfortaa', cursive;
     background: #111111;
