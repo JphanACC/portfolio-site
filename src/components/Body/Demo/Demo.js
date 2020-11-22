@@ -3,12 +3,28 @@ import React from 'react';
 import items from "../../../container/items.json";
 import Modal from "./Modal";
 
+import "./Demo.scss";
+
 export default function Demo() {
     return (
         <div className="container">
             <div className="bg-secondary text-center padding-top-md">
-                <i className="fa fa-js">test</i>
-            </div>
+                <div className="row">
+                    <div className="col">
+                    <img className="nativeJSIcon" src="/assets/icons/simple-javascript.svg" alt="nodejs icon"/>
+                    <img className="reactIcon" src="/assets/icons/awesome-react.svg" alt="nodejs icon"/>
+                    <img className="djangoIcon" src="/assets/icons/simple-django.svg" alt="nodejs icon"/>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                    <img className="mongoDBIcon" src="/assets/icons/simple-mongodb.svg" alt="nodejs icon"/>
+                    <img className="nodeJSIcon" src="/assets/icons/awesome-node-js.svg" alt="nodejs icon"/>
+                    <img className="pythonIcon" src="/assets/icons/simple-python.svg" alt="nodejs icon"/>
+                    </div>
+                </div>
+
+            </div> 
 
             <div className="row">
                 {items.map((item, index) => (
