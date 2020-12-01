@@ -1,22 +1,33 @@
 [{
-    "title": "Thumbnail Title",
-    "href": "/demo",
-    "imgSrc": "Demo.jpg",
-    "description": "a Project about Stfee",
-    "tags": ["NativeJS", "React", "MongoDB"]
+    "title": "Enter the Abyss",
+    "href": "https://github.com/JphanACC/EnterTheAbyss",
+    "imgSrc": "EnterTheAbyss.png",
+    "shortDescription": "a small video game in nativeJS",
+    "description": "This is a small video project that I made in nativeJS which allows the player descend into deeper floor of eternal abyss. While the difficulty rises as the player descends each floor, the player can also pick their own build to help with each increased challenge.",
+    "deployedUrl": "https://jphanacc.github.io/EnterTheAbyss/",
+    "tags": ["NativeJS"]
 }, {
-    "title": "Thumbnail Title 2",
-    "href": "/demo",
-    "imgSrc": "Demo.jpg",
-    "tags": ["Python", "Django", "Postgresql"]
+    "title": "Movie Now",
+    "href": "https://github.com/JphanACC/Movie-Now",
+    "shortDescription": "Movie booking web application",
+    "description": "This is a 2 persons project that helps user to find user to movies that match theaters tickets to movies that they pick. The project has 3 full CRUD models in Mongoose that allows user to create/edit/delete movies, theaters and showings.",
+    "imgSrc": "MovieNow.jpg",
+    "deployedUrl": "https://movienowapp.herokuapp.com/",
+    "tags": ["NativeJS", "NodeJS", "MongoDB"]
 }, {
-    "title": "Thumbnail Title 3",
-    "href": "/demo",
-    "imgSrc": "Demo.jpg",
-    "tags": ["JavaScript", "React", "MongoDB", "Python"]
+    "title": "Wayfarer",
+    "href": "https://github.com/donavonelli/Wayfarer",
+    "shortDescription": "Travel guide web application",
+    "description": "A group project that helps user to make posts that they visited on their application. The application was built in Django framework with Boostrap for stylizing. It has full CRUD models in PostgreSQL backend.",
+    "imgSrc": "Wayfarer.jpg",
+    "deployedUrl": "https://wayfarer-blizzard.herokuapp.com/",
+    "tags": ["Python", "PostgreSQL", "Django"]
 }, {
-    "title": "Thumbnail Title 4",
-    "href": "/demo",
-    "imgSrc": "Demo.jpg",
-    "tags": ["JavaScript", "React", "MongoDB"]
+    "title": "ShowCases",
+    "href": "https://github.com/JphanACC/ShowCases",
+    "shortDescription": "Social Media Web Application",
+    "description": "This MEN stack project was built for the purpose of helping users to find and follow any registered users. The user can make, edit and delete their user profile and posts that they made. They can also find their organized gallery that only show posts that contains media links. This social media platform also displays posts that has most 'likes'. This app was entirely inspired by the famous Twitter social media platform. ",
+    "imgSrc": "ShowCases.jpg",
+    "deployedUrl": "https://gshowcases.herokuapp.com/",
+    "tags": ["JavaScript", "NodeJS", "MongoDB"]
 }]

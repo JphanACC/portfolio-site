@@ -20,14 +20,14 @@ export default function Demo() {
         <div className="container">
             <div className="bg-gray text-center icon-bar fixed-top">
                 <div className="row">
-                    <div className="col">
+                    <div className="col margin-pd-sm">
                         <NativeJSIcon width={25} height={25} className={tags.includes("NativeJS") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
-                        <ReactIcon width={25} height={25} className={tags.includes("React") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
+                        <ReactIcon width={29} height={25} className={tags.includes("React") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
                         <DjangoIcon width={25} height={25} className={tags.includes("Django") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col">
+                    <div className="col margin-pd-sm">
                         <MongoDBIcon width={25} height={25} className={tags.includes("MongoDB") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
                         <NodeJSIcon width={25} height={25} className={tags.includes("NodeJS") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
                         <PythonIcon width={25} height={25} className={tags.includes("Python") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
@@ -50,10 +50,11 @@ export default function Demo() {
                             className="card bg-gray gray-color" 
                             href={item.href}
                             >
-                                <div className="card-header text-center">
-                                    {item.title}
+                                <div className="card-header text-center" style={{paddingBottom: "0"}}>
+                                    <h5>{item.title}</h5>
+                                    <p>{item.shortDescription}</p>
                                 </div>
-                                <img className="card-img-bottom" src={"/" + item.imgSrc} alt="thumbnails"/>
+                                <img className="card-img-bottom" src={"/assets/photos/" + item.imgSrc} alt="thumbnails"/>
                             </div>
                         </div>
                         

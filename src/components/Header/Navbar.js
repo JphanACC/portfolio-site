@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../Icons/Logo';
 import "./Navbar.css";
 
+import Word from "./files/JACK_PHAN_SE_Resume_Style.DOCX";
+import Pdf from "./files/JACK_PHAN_SE_Resume_Style.pdf";
+
 export default function Navbar() {
     return (     
             <nav className="navbar navbar-dark navbar-expand-lg fixed-top trans-bg">
@@ -22,15 +25,15 @@ export default function Navbar() {
                         </li>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/demo">Demo</NavLink>
+                        <NavLink className="nav-link" to="/demo">View My Works!</NavLink>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Resume
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item" href="#">PDF file</a>
-                            <a className="dropdown-item" href="#">Word file</a>
+                            <a className="dropdown-item" href={Pdf}>PDF file</a>
+                            <a className="dropdown-item" href={Word}>Word file</a>
                         </div>
                     </li>
                     <li className="nav-item">
