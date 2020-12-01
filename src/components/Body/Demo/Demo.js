@@ -1,45 +1,64 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import items from "../../../container/items.json";
 import Modal from "./Modal";
 
 import "./Demo.scss";
 
+//icons
+import NativeJSIcon from "../../Icons/NativeJSIcon";
+import ReactIcon from "../../Icons/ReactIcon";
+import DjangoIcon from "../../Icons/DjangoIcon";
+import MongoDBIcon from "../../Icons/MongoDBIcon";
+import NodeJSIcon from "../../Icons/NodeJSIcon";
+import PythonIcon from "../../Icons/PythonIcon";
+
 export default function Demo() {
+    const [tags, setTags] = useState([]);
+
     return (
         <div className="container">
-            <div className="bg-secondary text-center padding-top-md">
+            <div className="bg-gray text-center icon-bar fixed-top">
                 <div className="row">
                     <div className="col">
-                    <img className="nativeJSIcon" src="/assets/icons/simple-javascript.svg" alt="nodejs icon"/>
-                    <img className="reactIcon" src="/assets/icons/awesome-react.svg" alt="nodejs icon"/>
-                    <img className="djangoIcon" src="/assets/icons/simple-django.svg" alt="nodejs icon"/>
+                        <NativeJSIcon width={25} height={25} className={tags.includes("NativeJS") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
+                        <ReactIcon width={25} height={25} className={tags.includes("React") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
+                        <DjangoIcon width={25} height={25} className={tags.includes("Django") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                    <img className="mongoDBIcon" src="/assets/icons/simple-mongodb.svg" alt="nodejs icon"/>
-                    <img className="nodeJSIcon" src="/assets/icons/awesome-node-js.svg" alt="nodejs icon"/>
-                    <img className="pythonIcon" src="/assets/icons/simple-python.svg" alt="nodejs icon"/>
+                        <MongoDBIcon width={25} height={25} className={tags.includes("MongoDB") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
+                        <NodeJSIcon width={25} height={25} className={tags.includes("NodeJS") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
+                        <PythonIcon width={25} height={25} className={tags.includes("Python") ? "highlighted" : "gray-color"} style={{margin:"0 5px 0 5px"}}/>
                     </div>
                 </div>
-
             </div> 
 
-            <div className="row">
+            <div className="row item-padding-div">
                 {items.map((item, index) => (
-                <>
-                <div className="col-lg-3 my-2" data-toggle="modal" data-target={"#modal" + index}>
-                    <div className="card bg-dark" href={item.href}>
-                        <div className="card-header text-center">
-                            {item.title}
+                    <>
+                        <div
+                        key={index} 
+                        className={`col-lg-3 my-2" ${item.tags.join(' ')}`} 
+                        onMouseOver={() =>setTags(item.tags)}
+                        onMouseOut={() => setTags([])}
+                        data-toggle="modal"
+                        data-target={"#modal" + index}
+                        >
+                            <div 
+                            className="card bg-gray gray-color" 
+                            href={item.href}
+                            >
+                                <div className="card-header text-center">
+                                    {item.title}
+                                </div>
+                                <img className="card-img-bottom" src={"/" + item.imgSrc} alt="thumbnails"/>
+                            </div>
                         </div>
-                        <img className="card-img-bottom" src={"/" + item.imgSrc} alt="thumbnails"/>
-                    </div>
-                </div>
- 
-                <Modal index={index} {...item} />
-                </>
+                        
+                        <Modal index={index} {...item} />
+                    </>
                 ))}
             </div>
 

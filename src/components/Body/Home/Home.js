@@ -2,16 +2,28 @@ import React, { Component } from 'react'
 
 import './Home.css';
 
+import ProfilePhoto from "./photos/profile-photo.jpg";
+
+//icons
+import ArrowIcon from "../../Icons/ArrowIcon";
+import GithubIcon from "../../Icons/GithubIcon";
+import LinkedInIcon from "../../Icons/LinkedInIcon";
+
 export default class Home extends Component {
     render() {
         return (
-            <div className="container">
-                <div className="jumbotron padding-top-md bg-gray">
+            <div className="container padding-top-md">
+                <div className="jumbotron bg-gray">
                     <div className="row">
-                        <div className="col-4"> 
-                            <img className="profile-photo float-right" src="/assets/photos/profile-photo.jpg" alt="profile"/>
+                        <div className="col-12 col-md-4"> 
+                            <div 
+                                className="profile-photo profile-photo-div"
+                                style={{
+                                    backgroundImage: `url(${ProfilePhoto})`
+                                }}
+                             ></div>
                         </div>
-                        <div className="col">
+                        <div className="col-12 col-md-8 mobile">
                             <h4 className="orange-light">Full-stack Engineer</h4>
                             <h5 className="md-font light-gray"><strong>Based in US, I'm both an engineer and an artist</strong></h5>
                             <p className="sm-font light-gray">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
@@ -28,10 +40,19 @@ export default class Home extends Component {
                     <div className="col">
                     <h2 className="orange-light">About Me</h2>
                     <p className="sm-font light-gray">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
-                    <p className="sm-font light-gray float-right">Let's achieve together!</p>
+                    <p className="sm-font light-gray d-flex justify-content-center">Let's achieve together!</p>
                     </div>
                     <div className="col">
-                    <h1 className="fnt-pacifico orange-light float-right">Want More?</h1>
+                        <div className="row">
+                            <h1 className="fnt-pacifico orange-light to-left">Want More?</h1>
+                        </div>
+                        <div className="row">
+                            <div className="to-left mobile-center">
+                            <ArrowIcon className="font-secondary spacing-1"/>
+                            <a href="https://www.google.com/"><GithubIcon className="icon"/></a>
+                            <a href="https://www.google.com/"><LinkedInIcon className="icon" /></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

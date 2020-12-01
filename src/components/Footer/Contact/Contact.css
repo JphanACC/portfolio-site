@@ -1,0 +1,8 @@
+.submit-bg {
+    background-image: linear-gradient(180deg, #030002, #111009);
+}
+
+.submit-bg:hover {
+    color: white;
+    background-image: linear-gradient(90deg, #221301, #111009);
+}

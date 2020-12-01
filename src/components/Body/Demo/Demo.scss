@@ -1,3 +1,54 @@
 .nativeJSIcon {
     color: red;
 }
+
+.icon-bar {
+    padding: 10px;
+    top: 70px;
+    z-index: 900;
+}
+
+.item-padding-div {
+    padding-top: 165px;
+}
+
+.highlighted {
+    color: #BC8A00;
+}
+
+.gray-color {
+    color: #E6E6E6;
+}
+
+.card {
+    transition: transform .2s ease-in;
+    overflow: hidden;
+}
+
+.card:hover {
+    color: #BC8A00;
+    cursor: pointer;
+    transform: scale(1.1) translate(5%, 0%);
+}
+
+.modal-bg {
+    background-color: #080604ef;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-style: double;
+    border-radius: 12px;
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+}
+
+@media screen and (max-width: 750px) {
+    .mobile {
+        text-align: center;
+    }
+    .profile-photo-div {
+        max-width: 300px;
+        padding-bottom: 50px;
+        background-position: center;
+    }
+}

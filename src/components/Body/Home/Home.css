@@ -8,11 +8,63 @@
 }
 
 .bg-gray {
-    background: #181818;
+    background: #181818f1;
 }
 
 .profile-photo {
-    width: 300px;
-    background-position: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.profile-photo-div {
+    margin-left: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.font-primary {
+    color: #BC8A00;
+}
+
+.font-secondary {
+    color: #fefefe;
+}
+
+.to-left {
+    margin-left: auto;
+}
+
+.icon {
+    width: 25px;
+    margin: 5px;
+    color: #BC8A00;
+    transition: transform .1s ease-in;
+    overflow: hidden;
+}
+
+.spacing-1 {
+    margin: 0 5px;
+}
+
+.icon:hover {
+    opacity: .5;
+    transform: scale(1.5) translate(5%, 0%);
+}
+
+@media screen and (max-width: 750px) {
+    .mobile {
+        text-align: center;
+    }
+    .profile-photo {
+        max-width: 300px;
+        padding-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vh;
+    }
+    .mobile-center {
+        margin: 0 auto;
+    }
 }

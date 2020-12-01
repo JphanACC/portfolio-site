@@ -1,0 +1,19 @@
+.trans-bg {
+    background-color: #070604fa;
+}
+
+.nav-link {
+    color: #E6E6E6 !important;
+}
+
+.nav-link:hover {
+    color: #BC8A00 !important;
+}
+
+.test {
+    color: #BC8A00;
+}
+
+.nav-link.active {
+    color: #faf396 !important;
+}
