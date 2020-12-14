@@ -48,7 +48,6 @@ export default function Demo() {
                         >
                             <div 
                             className="card bg-gray gray-color" 
-                            href={item.href}
                             >
                                 <div className="card-header text-center" style={{paddingBottom: "0"}}>
                                     <h5>{item.title}</h5>

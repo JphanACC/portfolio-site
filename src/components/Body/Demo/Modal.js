@@ -16,8 +16,10 @@ export default function Modal(props) {
                 <div className="modal-body">
                     Description:
                     <p className="font-secondary">{ props.description }</p>
+                    Git Url: 
+                    <a href={props.href}><p className="font-secondary">{props.href}</p></a>
                     Deployed Url:
-                    <p className="font-secondary">{ props.deployedUrl }</p>
+                    <a href={props.deployedUrl}><p className="font-secondary">{ props.deployedUrl }</p></a>
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
